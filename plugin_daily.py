@@ -1,15 +1,3 @@
-# plugin_author: jieran233
-
-# todo:
-# - 网易头条新闻列表 https://www.alapi.cn/doc/show/25.html
-# - 微博热搜榜 https://www.alapi.cn/doc/show/28.html
-# - 历史上的今天 https://www.alapi.cn/doc/show/47.html
-# - 刷屏热词 https://www.alapi.cn/doc/show/67.html
-# - 获取热榜(无需ID) https://www.alapi.cn/doc/show/69.html
-
-# websites:
-# - Python教程 https://www.w3school.com.cn/python/index.asp
-
 import requests
 import json
 from urllib.parse import quote
@@ -78,7 +66,6 @@ def tenki(city):
 def covid19(province):  
     url = 'https://api.inews.qq.com/newsqa/v1/query/pubished/daily/list?province=' + quote(province, 'utf-8')
     html = requests.get(url)
-    html.text
     data = json.loads(html.text)['data']
     for i in data:
         data1={}
