@@ -29,13 +29,15 @@ main.py	---调用插件爬取并处理数据---> plugin_test.py
 
    **📄解决方法(🔃间接):** 服务端打开浏览器保持登录32k12，登录后粘贴最新的cookie
    
-   （留言页面为 https://apps.32k12.com/ecloud/ymessage/list.do；共2个cookie需保持最新，分别为`captcha`和`geli-session`，这2个cookie均为浏览会话结束时到期）
+   （留言页面为 [https://apps.32k12.com/ecloud/ymessage/list.do](https://apps.32k12.com/ecloud/ymessage/list.do)；共2个cookie需保持最新，分别为`captcha`和`geli-session`，这2个cookie均为浏览会话结束时到期）
    
 2. **[❌未解决]** 留言无法换行
 
-3. **[❌未解决]** 服务端要求内容长度必须在1到500个字符之间
+3. **[✅已解决]** 服务端要求内容长度必须在1到500个字符之间
 
    📄**解决方法(❌未能实现):** 自动按字数分条发送
+   
+   📄**解决方法(✅已实现):** 手动分条发送
 
 😊 欢迎提交Issue；欢迎提交PR
 

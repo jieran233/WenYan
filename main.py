@@ -1,13 +1,3 @@
-# author: jieran233
-# BUGs:
-# 1. cookie到期，返回{"statusCode":301, "message":"会话超时，请重新登录。","backUrl":"/login.jsp"}
-#    解决方法: 服务端打开浏览器保持登录32k12，登录后粘贴最新的cookie
-#    (留言页面为 https://apps.32k12.com/ecloud/ymessage/list.do)
-#    (共2个cookie需保持最新，分别为captcha和geli-session)
-#    (这2个cookie均为 浏览会话结束时 到期)
-# 2. 留言无法换行
-#    解决方法：暂无
-
 import requests
 import json
 from urllib.parse import quote
