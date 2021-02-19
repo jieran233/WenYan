@@ -29,13 +29,13 @@ toAccountIdsName = "岳锦天同学"
 toAccountId_id_show = "6899229;"
 toAccountId_name_show = "岳锦天同学;"
 # 填写Cookie
-captcha = "859d51c4abb855a3-7a3f577d1773d6e07c378c344784118866997796"#[该Cookie需保持最新(浏览会话结束时到期)]
+captcha = "21983c78d4c60cc1196b669a1776f4972171532-32518228328752101"#[该Cookie需保持最新(浏览会话结束时到期)]
 geli_yuser = "4851022"
 geli_yschool = "4214"
-geli_session = "6fabadb86aca92e10e99a51ac5bf2e8f"#[该Cookie需保持最新(浏览会话结束时到期)]
+geli_session = "55bc823aaa73840eefbe451fc15c3370"#[该Cookie需保持最新(浏览会话结束时到期)]
 remember_usr = "13910137227"
 # 填写发送内容（手动分条）
-contents = ["早上好，又是新的一天~    每日一言："+daily.hitokoto()+"    "+daily.tenki('石家庄')+"    "+daily.covid19('河北')+"    "+daily.covid19('北京'), "微博热搜TOP20："+news.wbtop(20), "蓝点网资讯："+rss.landiannews(), "历史上的今天："+news.eventHistory()]
+contents = ["早上好，又是新的一天~ || 每日一言："+daily.hitokoto()+" || "+daily.tenki('石家庄')+" || "+daily.covid19('河北')+" || "+daily.covid19('北京'), "百度风云榜实时热点："+rss.baidutop(), "今日新番放送："+rss.bangumi()[:250], "蓝点网资讯："+rss.landiannews(), "酷安图文编辑精选："+rss.coolapkpy(), "StuartRiki_KeyTV的B站动态："+rss.keytvnews(), "历史上的今天："+news.eventHistory()]
 # 发送留言并输出返回结果
 for i in range(0,len(contents)):
     # 倒序分条发送
